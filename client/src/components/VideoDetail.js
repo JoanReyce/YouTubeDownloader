@@ -1,6 +1,6 @@
 import React from "react";
 
-import GetAppIcon from "@material-ui/icons/GetApp";
+import LocalMoviesRoundedIcon from '@material-ui/icons/LocalMoviesRounded';
 import "./VideoDetail.css";
 const VideoDetail = ({ video }) => {
   // const config = {
@@ -53,12 +53,12 @@ const VideoDetail = ({ video }) => {
               }
             }}
           >
-            <GetAppIcon />
-            video
+            <LocalMoviesRoundedIcon />
+            Descarga
           </button>
 
           <h4 className="header">{video.snippet.title}</h4>
-          <p className="para">{video.snippet.description}</p>
+          
         </div>
       </div>
     </>
