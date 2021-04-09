@@ -14,7 +14,9 @@ app.use("/api/videos", require("./routes/api/getvideos"));
 app.get("/download", (req, res) => {
   try {
     var URL = req.query.URL;
-    res.header("Content-Disposition", 'attachment; filename="video.mp4"');
+    var prename = URL.split("=");
+    var name = 'attachment; filename=' + prename[1] +'.mp4 ';
+    res.header("Content-Disposition", name);
     ytdl(URL, {
       format: "mp4",
     }).pipe(res);
