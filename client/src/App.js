@@ -20,7 +20,7 @@ const App = ({ videos: { videos }, getvideos }) => {
     setselectvideo(video);
   };
   useEffect(() => {
-    getvideos("Otnicka");
+    getvideos("Pepa Pig");
   }, []);
   const formOnSubmit = (e) => {
     e.preventDefault();
@@ -33,8 +33,7 @@ const App = ({ videos: { videos }, getvideos }) => {
       <Fragment>
         <div className="page">
           <Navbar />
-          <h1 className="heading">Download || Watch YouTube Videos</h1>
-          <p className="credits">&copy; coded by Gunratna</p>
+          <h1 className="heading">Aquí tienes tu propia web para que descarges los videos favoritos de tus peques!!!</h1>
           <form
             onSubmit={(e) => {
               formOnSubmit(e);
@@ -44,7 +43,7 @@ const App = ({ videos: { videos }, getvideos }) => {
               <input
                 className="impt"
                 type="text"
-                placeholder="Search Here"
+                placeholder="Pon aquí que buscas"
                 spellCheck="false"
                 value={term}
                 onChange={(e) => {
@@ -61,7 +60,7 @@ const App = ({ videos: { videos }, getvideos }) => {
                   color="primary"
                   className="btn1"
                 >
-                  Search
+                  ¡¡Ruben Selections!!
                 </Button>
               </div>
             </div>
@@ -79,7 +78,8 @@ const App = ({ videos: { videos }, getvideos }) => {
           <br></br>
           <br></br>
           <br></br>
-          <p>@2021 All Rights Reserved</p>
+          <p>Thanks for share your code Gunratna!! ;D </p>
+          <p className="credits">&copy; coded by Gunratna</p>
         </footer>
       </Fragment>
     </Provider>
